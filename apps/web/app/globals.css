@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-display: "Fraunces", "Cormorant Garamond", Georgia, serif;
+  --font-body: "Newsreader", "Iowan Old Style", Cambria, serif;
+  --surface-ink: #05070d;
+  --surface-panel: rgba(15, 23, 42, 0.72);
+  --surface-glass: rgba(226, 232, 240, 0.1);
+  --surface-line: rgba(148, 163, 184, 0.28);
+  --accent-glow: #67e8f9;
+  --accent-acid: #d9f99d;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100%;
+  background: var(--surface-ink);
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  overflow-x: hidden;
+  color: #e5eefb;
+  background:
+    radial-gradient(circle at 15% 10%, rgba(103, 232, 249, 0.22), transparent 28rem),
+    radial-gradient(circle at 86% 18%, rgba(217, 249, 157, 0.16), transparent 24rem),
+    linear-gradient(135deg, #05070d 0%, #0f172a 52%, #09090b 100%);
+  font-family: var(--font-body);
+}
+
+body::before {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  content: "";
+  opacity: 0.32;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+  background-size: 44px 44px;
+  mask-image: radial-gradient(circle at center, black, transparent 72%);
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+@layer components {
+  .glass-card {
+    border: 1px solid var(--surface-line);
+    background: linear-gradient(145deg, rgba(15, 23, 42, 0.82), rgba(39, 39, 42, 0.52));
+    box-shadow: 0 24px 80px rgba(8, 13, 30, 0.42);
+    backdrop-filter: blur(18px);
+  }
+
+  .lab-button {
+    @apply rounded-full border border-slate-500/30 bg-slate-100/10 px-4 py-2 text-sm font-semibold tracking-wide text-slate-100 shadow-lg shadow-slate-950/20 transition duration-200 hover:-translate-y-0.5 hover:border-cyan-200/60 hover:bg-cyan-100/15 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-200 disabled:cursor-not-allowed disabled:opacity-40 disabled:hover:translate-y-0 disabled:hover:border-slate-500/30 disabled:hover:bg-slate-100/10;
+  }
+
+  .hint-highlight {
+    animation: hint-pulse 2s ease-in-out;
+  }
+}

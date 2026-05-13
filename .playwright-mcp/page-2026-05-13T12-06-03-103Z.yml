@@ -1,0 +1,24 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - navigation [ref=e3]:
+      - link "Liquify" [ref=e4] [cursor=pointer]:
+        - /url: /
+      - generic [ref=e5]:
+        - link "Play" [ref=e6] [cursor=pointer]:
+          - /url: /
+        - link "Leaderboard" [ref=e7] [cursor=pointer]:
+          - /url: /leaderboard
+  - main [ref=e8]:
+    - generic [ref=e10]:
+      - generic [ref=e11]:
+        - generic [ref=e12]:
+          - paragraph [ref=e13]: Water Sort Puzzle
+          - heading "Liquify" [level=1] [ref=e14]
+        - generic [ref=e15]:
+          - paragraph [ref=e16]: Moves
+          - paragraph [ref=e17]: "0"
+      - generic [ref=e31]:
+        - button "Undo" [disabled] [ref=e32]
+        - button "Hint" [disabled] [ref=e33]
+        - button "Shuffle" [disabled] [ref=e34]
+        - button "New Game" [disabled] [ref=e35]

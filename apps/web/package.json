@@ -1,0 +1,28 @@
+{
+  "name": "@liquify/web",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "pnpm --filter @liquify/core build && node ./scripts/free-port.mjs 3100 && node ./scripts/clean-next.mjs && next dev -p 3100",
+    "build": "pnpm --filter @liquify/core build && node ./scripts/clean-next.mjs && next build",
+    "start": "next start -p 3100",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@liquify/core": "workspace:*",
+    "next": "15.5.18",
+    "react": "19.0.0",
+    "react-dom": "19.0.0",
+    "zustand": "5.0.4"
+  },
+  "devDependencies": {
+    "@types/node": "22.15.17",
+    "@types/react": "19.0.12",
+    "@types/react-dom": "19.0.4",
+    "autoprefixer": "10.4.21",
+    "postcss": "8.5.3",
+    "tailwindcss": "3.4.17",
+    "typescript": "5.7.3"
+  }
+}

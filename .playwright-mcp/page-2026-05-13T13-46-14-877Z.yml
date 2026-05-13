@@ -1,0 +1,22 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - navigation [ref=e3]:
+      - link "Liquify" [ref=e4] [cursor=pointer]:
+        - /url: /
+      - generic [ref=e5]:
+        - link "Играть" [ref=e6] [cursor=pointer]:
+          - /url: /
+        - link "Рекорды" [ref=e7] [cursor=pointer]:
+          - /url: /leaderboard
+        - generic "Язык" [ref=e8]:
+          - button "RU" [pressed] [ref=e9] [cursor=pointer]
+          - button "EN" [ref=e10] [cursor=pointer]
+  - main [ref=e11]:
+    - generic [ref=e12]:
+      - generic [ref=e13]:
+        - generic [ref=e14]:
+          - paragraph [ref=e15]: Топ-10 чистых прохождений
+          - heading "Рекорды" [level=1] [ref=e16]
+        - link "Играть" [ref=e17] [cursor=pointer]:
+          - /url: /
+      - paragraph [ref=e18]: Загружаем рекорды...
