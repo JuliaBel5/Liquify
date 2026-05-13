@@ -1,0 +1,41 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - navigation [ref=e3]:
+      - link "Liquify" [ref=e4] [cursor=pointer]:
+        - /url: /
+      - generic [ref=e5]:
+        - link "Играть" [ref=e6] [cursor=pointer]:
+          - /url: /
+        - link "Рекорды" [ref=e7] [cursor=pointer]:
+          - /url: /leaderboard
+        - generic "Язык" [ref=e8]:
+          - button "RU" [pressed] [ref=e9] [cursor=pointer]
+          - button "EN" [ref=e10] [cursor=pointer]
+  - main [ref=e11]:
+    - generic [ref=e13]:
+      - generic [ref=e14]:
+        - generic [ref=e15]:
+          - paragraph [ref=e16]: Колбочки
+          - heading "Liquify" [level=1] [ref=e17]
+        - generic [ref=e18]:
+          - paragraph [ref=e19]: Ходы
+          - paragraph [ref=e20]: "0"
+      - generic [ref=e21]:
+        - button "Tube 1" [ref=e22] [cursor=pointer]
+        - button "Tube 2" [ref=e28] [cursor=pointer]
+        - button "Tube 3" [ref=e34] [cursor=pointer]
+        - button "Tube 4" [ref=e40] [cursor=pointer]
+        - button "Tube 5" [ref=e46] [cursor=pointer]
+        - button "Tube 6" [ref=e52] [cursor=pointer]
+        - button "Tube 7" [ref=e58] [cursor=pointer]
+        - button "Tube 8" [ref=e64] [cursor=pointer]
+        - button "Tube 9" [ref=e70] [cursor=pointer]
+        - button "Tube 10" [ref=e76] [cursor=pointer]
+        - button "Tube 11" [ref=e82] [cursor=pointer]
+        - button "Tube 12" [ref=e84] [cursor=pointer]
+      - generic [ref=e86]:
+        - button "Undo" [disabled] [ref=e87]
+        - button "Hint" [ref=e88] [cursor=pointer]
+        - button "Shuffle" [ref=e89] [cursor=pointer]
+        - button "Новая игра" [ref=e90] [cursor=pointer]
+  - alert [ref=e91]

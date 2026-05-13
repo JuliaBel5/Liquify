@@ -1,0 +1,41 @@
+- generic [active] [ref=e1]:
+  - alert [ref=e91]
+  - banner [ref=e92]:
+    - navigation [ref=e93]:
+      - link "Liquify" [ref=e94] [cursor=pointer]:
+        - /url: /
+      - generic [ref=e95]:
+        - link "Play" [ref=e96] [cursor=pointer]:
+          - /url: /
+        - link "Leaderboard" [ref=e97] [cursor=pointer]:
+          - /url: /leaderboard
+        - generic "Language" [ref=e98]:
+          - button "RU" [ref=e99] [cursor=pointer]
+          - button "EN" [pressed] [ref=e100] [cursor=pointer]
+  - main [ref=e101]:
+    - generic [ref=e103]:
+      - generic [ref=e104]:
+        - generic [ref=e105]:
+          - paragraph [ref=e106]: Water Sort Puzzle
+          - heading "Liquify" [level=1] [ref=e107]
+        - generic [ref=e108]:
+          - paragraph [ref=e109]: Moves
+          - paragraph [ref=e110]: "0"
+      - generic [ref=e111]:
+        - button "Tube 1" [ref=e112] [cursor=pointer]
+        - button "Tube 2" [ref=e118] [cursor=pointer]
+        - button "Tube 3" [ref=e124] [cursor=pointer]
+        - button "Tube 4" [ref=e130] [cursor=pointer]
+        - button "Tube 5" [ref=e136] [cursor=pointer]
+        - button "Tube 6" [ref=e142] [cursor=pointer]
+        - button "Tube 7" [ref=e148] [cursor=pointer]
+        - button "Tube 8" [ref=e154] [cursor=pointer]
+        - button "Tube 9" [ref=e160] [cursor=pointer]
+        - button "Tube 10" [ref=e166] [cursor=pointer]
+        - button "Tube 11" [ref=e172] [cursor=pointer]
+        - button "Tube 12" [ref=e174] [cursor=pointer]
+      - generic [ref=e176]:
+        - button "Undo" [disabled] [ref=e177]
+        - button "Hint" [ref=e178] [cursor=pointer]
+        - button "Shuffle" [ref=e179] [cursor=pointer]
+        - button "New Game" [ref=e180] [cursor=pointer]

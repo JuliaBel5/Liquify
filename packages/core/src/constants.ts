@@ -1,0 +1,6 @@
+export const MVP_LEVEL_DEFAULTS = {
+  TUBES_TOTAL: 10,
+  TUBE_CAPACITY: 4,
+  COLORS_COUNT: 8,
+  EMPTY_TUBES: 2,
+} as const;

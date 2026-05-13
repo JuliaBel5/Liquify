@@ -1,0 +1,57 @@
+{
+  "metadata": {
+    "title": "Liquify — Колбочки",
+    "description": "Тактильная головоломка Water Sort Puzzle на Next.js и @liquify/core."
+  },
+  "navigation": {
+    "brand": "Liquify",
+    "play": "Играть",
+    "leaderboard": "Рекорды",
+    "language": "Язык",
+    "ru": "RU",
+    "en": "EN"
+  },
+  "game": {
+    "eyebrow": "Колбочки",
+    "title": "Liquify",
+    "moveCounter": {
+      "label": "Ходы",
+      "noRecord": "*без рекорда"
+    },
+    "controls": {
+      "undo": "Undo",
+      "hint": "Hint",
+      "shuffle": "Shuffle",
+      "newGame": "Новая игра"
+    },
+    "winDialog": {
+      "eyebrow": "Лаборатория собрана",
+      "title": "Решено за {moves} ходов!",
+      "usedAids": "Не учитывается в таблице рекордов.",
+      "cleanRun": "Прохождение сохранено в таблицу рекордов.",
+      "playAgain": "Играть ещё",
+      "viewLeaderboard": "К рекордам"
+    },
+    "noMovesDialog": {
+      "eyebrow": "Нет результативных ходов",
+      "title": "Ходов больше нет",
+      "description": "Не осталось результативных ходов. Можно перемешать колбочки и начать новую попытку.",
+      "shuffle": "Shuffle",
+      "stay": "Остаться здесь"
+    }
+  },
+  "leaderboard": {
+    "eyebrow": "Топ-10 чистых прохождений",
+    "title": "Рекорды",
+    "play": "Играть",
+    "loading": "Загружаем рекорды...",
+    "empty": "Рекордов пока нет. Сыграй первую партию!",
+    "confirmClear": "Очистить все рекорды Liquify?",
+    "columns": {
+      "rank": "#",
+      "moves": "Ходы",
+      "date": "Дата"
+    },
+    "clear": "Очистить рекорды"
+  }
+}

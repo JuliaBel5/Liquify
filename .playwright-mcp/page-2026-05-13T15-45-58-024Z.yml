@@ -1,0 +1,27 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - navigation [ref=e3]:
+      - link "Liquify" [ref=e4] [cursor=pointer]:
+        - /url: /
+      - generic [ref=e5]:
+        - link "Играть" [ref=e6] [cursor=pointer]:
+          - /url: /
+        - link "Рекорды" [ref=e7] [cursor=pointer]:
+          - /url: /leaderboard
+        - generic "Язык" [ref=e8]:
+          - button "RU" [pressed] [ref=e9] [cursor=pointer]
+          - button "EN" [ref=e10] [cursor=pointer]
+  - main [ref=e11]:
+    - generic [ref=e13]:
+      - generic [ref=e14]:
+        - generic [ref=e15]:
+          - paragraph [ref=e16]: Колбочки
+          - heading "Liquify" [level=1] [ref=e17]
+        - generic [ref=e18]:
+          - paragraph [ref=e19]: Ходы
+          - paragraph [ref=e20]: "0"
+      - generic [ref=e34]:
+        - button "Undo" [disabled] [ref=e35]
+        - button "Hint" [disabled] [ref=e36]
+        - button "Shuffle" [disabled] [ref=e37]
+        - button "Новая игра" [disabled] [ref=e38]

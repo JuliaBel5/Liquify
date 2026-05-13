@@ -1,0 +1,57 @@
+{
+  "metadata": {
+    "title": "Liquify — Water Sort Puzzle",
+    "description": "A tactile Water Sort Puzzle built with Next.js and @liquify/core."
+  },
+  "navigation": {
+    "brand": "Liquify",
+    "play": "Play",
+    "leaderboard": "Leaderboard",
+    "language": "Language",
+    "ru": "RU",
+    "en": "EN"
+  },
+  "game": {
+    "eyebrow": "Water Sort Puzzle",
+    "title": "Liquify",
+    "moveCounter": {
+      "label": "Moves",
+      "noRecord": "*no record"
+    },
+    "controls": {
+      "undo": "Undo",
+      "hint": "Hint",
+      "shuffle": "Shuffle",
+      "newGame": "New Game"
+    },
+    "winDialog": {
+      "eyebrow": "Laboratory complete",
+      "title": "Solved in {moves} moves!",
+      "usedAids": "Not counted in the leaderboard.",
+      "cleanRun": "Clean run saved to your local leaderboard.",
+      "playAgain": "Play again",
+      "viewLeaderboard": "View leaderboard"
+    },
+    "noMovesDialog": {
+      "eyebrow": "No useful moves",
+      "title": "No moves left",
+      "description": "There are no resultative pours left in this position. Shuffle the tubes and start a new attempt.",
+      "shuffle": "Shuffle",
+      "stay": "Stay here"
+    }
+  },
+  "leaderboard": {
+    "eyebrow": "Top 10 clean runs",
+    "title": "Leaderboard",
+    "play": "Play",
+    "loading": "Loading records...",
+    "empty": "No records yet. Play your first game!",
+    "confirmClear": "Clear all Liquify records?",
+    "columns": {
+      "rank": "#",
+      "moves": "Moves",
+      "date": "Date"
+    },
+    "clear": "Clear records"
+  }
+}
