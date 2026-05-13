@@ -67,8 +67,10 @@ export const MVP_LEVEL_DEFAULTS = {
 
 1. [vercel.com](https://vercel.com) → **Add New Project** → Import от GitHub.
 2. Framework Preset — определится автоматически (Next.js).
-3. Root Directory — оставить корень `/` (vercel.json сам всё разрулит).
+3. Root Directory — оставить корень `/` (не `apps/web`). `vercel.json` сам соберёт `@liquify/web`.
 4. Deploy.
+
+Важно: root `package.json` содержит `next` в `devDependencies` специально для Vercel Framework Detection. Само приложение живёт в `apps/web`.
 
 ### Вариант 2 — Vercel CLI
 
