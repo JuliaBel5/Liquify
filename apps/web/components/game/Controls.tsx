@@ -1,5 +1,6 @@
 'use client';
 
+import { canQuickFinish } from '@liquify/core';
 import { useTranslations } from '@/app/providers';
 import { useGameStore } from '@/lib/store';
 
@@ -10,6 +11,7 @@ export function Controls() {
   const actions = useGameStore((store) => store.actions);
   const isWon = state?.status === 'won';
   const disabled = state === null || isAnimating;
+  const quickFinishAvailable = state !== null && canQuickFinish(state);
 
   return (
     <div className="glass-card flex flex-wrap items-center justify-center gap-2 rounded-[1.5rem] p-3 sm:gap-3 sm:p-4">
@@ -45,6 +47,17 @@ export function Controls() {
       >
         <span aria-hidden="true" className="hidden text-lg leading-none max-[500px]:block">⇄</span>
         <span className="max-[500px]:sr-only">{t('shuffle')}</span>
+      </button>
+      <button
+        type="button"
+        aria-label={t('quickFinish')}
+        data-testid="quick-finish-btn"
+        disabled={disabled || isWon || !quickFinishAvailable}
+        onClick={actions.quickFinish}
+        className="lab-button border-cyan-200/40 text-cyan-50 hover:border-cyan-100/80 hover:bg-cyan-100/15 max-[500px]:grid max-[500px]:h-10 max-[500px]:w-10 max-[500px]:place-items-center max-[500px]:px-0 max-[500px]:py-0"
+      >
+        <span aria-hidden="true" className="hidden text-base leading-none max-[500px]:block">🚀</span>
+        <span className="max-[500px]:sr-only">{t('quickFinish')}</span>
       </button>
       <button
         type="button"

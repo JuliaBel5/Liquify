@@ -36,7 +36,7 @@ export function Tube({ index, tube, selected, hinted, disabled, onSelect }: Tube
             key={`${index}-${layerIndex}-${color}`}
             data-testid="liquid-layer"
             data-color={color}
-            className={`h-[2.35rem] w-[2.35rem] rounded-md border border-white/25 shadow-inner transition-all duration-300 sm:h-[3.35rem] sm:w-[3.35rem] ${liquidClasses(color)}`}
+            className={`h-[2.35rem] w-[2.35rem] rounded-md border border-white/25 shadow-inner transition-all duration-300 max-[500px]:h-9 max-[500px]:w-9 sm:h-[3.35rem] sm:w-[3.35rem] ${liquidClasses(color)}`}
           />
         ))}
       </span>

@@ -18,6 +18,9 @@ export {
   isTrivial,
   createInitialState,
   legalMoves,
+  getQuickFinishMoves,
+  canQuickFinish,
+  applyQuickFinish,
 } from './game.js';
 export { generateSolvableLevel, shuffle } from './generator.js';
 export { solveDFS, findHint } from './solver.js';

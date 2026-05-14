@@ -12,15 +12,12 @@ export default function HomePage() {
 
   return (
     <main className="mx-auto flex min-h-[calc(100vh-65px)] max-w-6xl flex-col px-3 py-5 sm:px-6 sm:py-8">
-      <section className="glass-card relative overflow-hidden rounded-[2rem] px-3 py-5 sm:px-8 sm:py-8">
+      <section className="glass-card relative overflow-hidden rounded-[2rem] px-3 py-3 sm:px-8 sm:py-5">
         <div className="pointer-events-none absolute -right-20 -top-24 h-64 w-64 rounded-full bg-cyan-300/20 blur-3xl" />
         <div className="pointer-events-none absolute -bottom-24 left-10 h-56 w-56 rounded-full bg-lime-200/10 blur-3xl" />
         <div className="relative flex flex-col gap-5">
           <div className="flex flex-wrap items-end justify-between gap-3">
-            <div>
-              <p className="text-xs font-bold uppercase tracking-[0.35em] text-cyan-100/70">{t('eyebrow')}</p>
-              <h1 className="font-display text-4xl font-black tracking-tight text-slate-50 sm:text-6xl">{t('title')}</h1>
-            </div>
+            <h1 className="font-display text-2xl font-black tracking-tight text-slate-50 sm:text-4xl">{t('title')}</h1>
             <MoveCounter />
           </div>
           <Board />
