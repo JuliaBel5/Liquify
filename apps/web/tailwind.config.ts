@@ -1,14 +1,14 @@
 import type { Config } from 'tailwindcss';
 
 const liquidSafelist = [
-  'bg-red-500', 'border-red-700', 'shadow-red-500/50',
+  'bg-rose-500', 'border-rose-700', 'shadow-rose-500/50',
   'bg-orange-500', 'border-orange-700', 'shadow-orange-500/50',
-  'bg-amber-400', 'border-amber-600', 'shadow-amber-400/50',
+  'bg-yellow-300', 'border-yellow-500', 'shadow-yellow-300/50',
   'bg-lime-500', 'border-lime-700', 'shadow-lime-500/50',
   'bg-emerald-500', 'border-emerald-700', 'shadow-emerald-500/50',
-  'bg-cyan-500', 'border-cyan-700', 'shadow-cyan-500/50',
-  'bg-blue-500', 'border-blue-700', 'shadow-blue-500/50',
-  'bg-violet-500', 'border-violet-700', 'shadow-violet-500/50',
+  'bg-pink-500', 'border-pink-700', 'shadow-pink-500/50',
+  'bg-sky-600', 'border-sky-800', 'shadow-sky-600/50',
+  'bg-purple-700', 'border-purple-900', 'shadow-purple-700/50',
   'bg-fuchsia-500', 'border-fuchsia-700', 'shadow-fuchsia-500/50',
   'bg-rose-300', 'border-rose-500', 'shadow-rose-300/50',
 ];
