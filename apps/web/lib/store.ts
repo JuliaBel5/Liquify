@@ -1,5 +1,6 @@
 import {
   applyMove,
+  applyQuickFinish,
   canMove,
   createInitialState,
   findHint,
@@ -31,6 +32,7 @@ interface GameStore {
     move(from: number, to: number): void;
     undo(): void;
     hint(): void;
+    quickFinish(): void;
     shuffle(): void;
     newGame(): void;
     clearHintHighlight(): void;
@@ -180,6 +182,32 @@ export const useGameStore = create<GameStore>((set, get) => ({
           get().actions.clearHintHighlight();
         }, 2000);
       }
+    },
+
+    quickFinish() {
+      const current = get().state;
+      if (current === null || current.status === 'won' || get().isAnimating) return;
+
+      const next = applyQuickFinish(current);
+      if (next === null) return;
+
+      const lastMove = next.history[next.history.length - 1];
+
+      clearHintTimer();
+      clearAnimationTimer();
+      set({
+        state: next,
+        selectedTubeIndex: null,
+        hintHighlight: null,
+        lastMove: lastMove === undefined ? null : { from: lastMove.from, to: lastMove.to },
+        isAnimating: true,
+        noMovesDialogOpen: false,
+      });
+
+      animationTimer = setTimeout(() => {
+        set({ isAnimating: false, lastMove: null });
+        animationTimer = null;
+      }, 340);
     },
 
     shuffle() {

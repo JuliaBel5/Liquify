@@ -19,9 +19,10 @@
       "noRecord": "*без рекорда"
     },
     "controls": {
-      "undo": "Undo",
-      "hint": "Hint",
-      "shuffle": "Shuffle",
+      "undo": "Отмена",
+      "hint": "Подсказка",
+      "shuffle": "Смешать",
+      "quickFinish": "Закончить",
       "newGame": "Новая игра"
     },
     "winDialog": {
