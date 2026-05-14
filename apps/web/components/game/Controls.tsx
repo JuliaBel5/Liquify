@@ -1,11 +1,15 @@
 'use client';
 
 import { canQuickFinish } from '@liquify/core';
-import { useTranslations } from '@/app/providers';
+import { type Locale, useLocaleSwitcher, useTranslations } from '@/app/providers';
 import { useGameStore } from '@/lib/store';
+
+const LOCALES: Locale[] = ['ru', 'en'];
 
 export function Controls() {
   const t = useTranslations('game.controls');
+  const navigationT = useTranslations('navigation');
+  const { locale, setLocale } = useLocaleSwitcher();
   const state = useGameStore((store) => store.state);
   const isAnimating = useGameStore((store) => store.isAnimating);
   const actions = useGameStore((store) => store.actions);
@@ -59,15 +63,23 @@ export function Controls() {
         <span aria-hidden="true" className="hidden text-base leading-none max-[500px]:block">🚀</span>
         <span className="max-[500px]:sr-only">{t('quickFinish')}</span>
       </button>
-      <button
-        type="button"
-        data-testid="new-game-btn"
-        disabled={disabled}
-        onClick={actions.newGame}
-        className="lab-button border-lime-200/40 text-lime-50 hover:border-lime-100/80 hover:bg-lime-100/15"
-      >
-        {t('newGame')}
-      </button>
+      <div className="flex items-center gap-1 rounded-full border border-slate-200/10 bg-slate-100/5 p-1" aria-label={navigationT('language')}>
+        {LOCALES.map((item) => (
+          <button
+            key={item}
+            type="button"
+            onClick={() => setLocale(item)}
+            className={`rounded-full px-2.5 py-1 text-xs font-black tracking-[0.16em] transition focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-200 ${
+              locale === item
+                ? 'bg-cyan-100 text-slate-950 shadow-lg shadow-cyan-300/20'
+                : 'text-slate-300 hover:bg-white/10 hover:text-cyan-100'
+            }`}
+            aria-pressed={locale === item}
+          >
+            {navigationT(item)}
+          </button>
+        ))}
+      </div>
     </div>
   );
 }

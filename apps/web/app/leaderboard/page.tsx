@@ -12,7 +12,6 @@ export default function LeaderboardPage() {
       <section className="glass-card overflow-hidden rounded-[2rem] p-5 sm:p-8">
         <div className="mb-6 flex flex-wrap items-end justify-between gap-4">
           <div>
-            <p className="text-xs font-bold uppercase tracking-[0.35em] text-lime-100/70">{t('eyebrow')}</p>
             <h1 className="font-display text-4xl font-black tracking-tight text-slate-50 sm:text-5xl">{t('title')}</h1>
           </div>
           <Link href="/" className="lab-button">{t('play')}</Link>

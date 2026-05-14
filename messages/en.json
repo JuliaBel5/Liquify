@@ -43,7 +43,7 @@
   },
   "leaderboard": {
     "eyebrow": "Top 10 clean runs",
-    "title": "Leaderboard",
+    "title": "Leaderboard - Top 10",
     "play": "Play",
     "loading": "Loading records...",
     "empty": "No records yet. Play your first game!",
@@ -51,7 +51,7 @@
     "columns": {
       "rank": "#",
       "moves": "Moves",
-      "date": "Date"
+      "date": "Date and time"
     },
     "clear": "Clear records"
   }
